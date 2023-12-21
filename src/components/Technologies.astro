@@ -1,0 +1,41 @@
+---
+// Import any required components or data here
+---
+
+<section class="technologies">
+  <div class="card">
+    <h3>Programming Languages</h3>
+    <p>Details about the programming languages you use.</p>
+    <!-- Add more content here if needed -->
+  </div>
+  <div class="card">
+    <h3>Frameworks</h3>
+    <p>Details about the frameworks you work with.</p>
+    <!-- Add more content here if needed -->
+  </div>
+  <div class="card">
+    <h3>OS</h3>
+    <p>Details about the operating systems you are proficient in.</p>
+    <!-- Add more content here if needed -->
+  </div>
+  <div class="card">
+    <h3>Terminal Setup</h3>
+    <p>Details about your terminal setup and tools.</p>
+    <!-- Add more content here if needed -->
+  </div>
+</section>
+
+<style>
+  .technologies {
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 1em;
+    height: 100%;
+  }
+  .card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+</style>
