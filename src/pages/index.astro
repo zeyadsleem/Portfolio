@@ -48,8 +48,8 @@ const projects = (await getCollection('work'))
 					src="/assets/portrait.jpg"
 				/>
 			</header>
-
 			<Skills />
+			<h2>Website is under construction 🏗️ <span style="font-size:0.3em">visit me again to be updated 🔄</span></h2>
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
@@ -81,7 +81,7 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Technologies</h3>
+					<h3>Technologies <Icon icon="code" size="1.33em" /></h3>
 					<p>
 						Some technologies I've worked with and I love to use in my projects.
 					</p>
@@ -115,6 +115,17 @@ const projects = (await getCollection('work'))
 		object-position: top;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
+	}
+	
+	.hero img:hover {
+		animation: floating 2s ease-in-out infinite;
+
+	}
+
+	@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 5px); }
+    100%   { transform: translate(0, -0px); }    
 	}
 
 	@media (min-width: 50em) {
