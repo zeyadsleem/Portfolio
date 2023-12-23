@@ -4,24 +4,41 @@
 
 <section class="technologies">
   <div class="card">
-    <h3>Programming Languages</h3>
-    <p>Details about the programming languages you use.</p>
-    <!-- Add more content here if needed -->
+    <h3>Programming</h3>
+    <ul>
+      <li>Html, css , Js <span class="note">web base</span></li>
+      <li>Typescript</li>
+      <li>c#</li>
+      <li>sql <span class="note">sqlite, mysql</span></li>
+    </ul>
   </div>
   <div class="card">
     <h3>Frameworks</h3>
-    <p>Details about the frameworks you work with.</p>
-    <!-- Add more content here if needed -->
+    <ul>
+      <li>React <span class="note">library</span></li>
+      <li>NextJs</li>
+      <li>ExpressJs</li>
+      <li>NestJs</li>
   </div>
-  <div class="card">
+  <!-- <div class="card">
     <h3>OS</h3>
-    <p>Details about the operating systems you are proficient in.</p>
-    <!-- Add more content here if needed -->
-  </div>
+    <ul>
+      <li>Endeavouros <span class="note">Arch Based distro</span></li>
+      <li>Wayland <span class="note">System Protocol</span></li>
+      <li>Wayland <span class="note">HyperDots</span></li>
+    </ul>
+  </div> -->
   <div class="card">
-    <h3>Terminal Setup</h3>
-    <p>Details about your terminal setup and tools.</p>
-    <!-- Add more content here if needed -->
+    <h3>Dev tools</h3>
+    <ul>
+      <li>Git & Github <span class="note">and gh cli</span></li>
+      <li>VScode</li>
+      <li>Nvim <span class="note">lazyvim</span></li>
+      <li>tmux</li>
+      <li>Postman</li>
+      <li>Docker</li>
+      <li>Jira</li>
+    </ul>
   </div>
 </section>
 
@@ -38,4 +55,19 @@
     border: 1px solid #ccc;
     border-radius: 1em;
   }
+  .note {
+    font-size: small;
+    font-style: italic;
+    color: #504e4e;
+  }
+  .note::before {
+    content: ' 📝 ';
+  }
+  .note::after {
+    content: '`';
+  }
+    
+  li::marker {
+	color: #e3e6ee;
+}
 </style>
